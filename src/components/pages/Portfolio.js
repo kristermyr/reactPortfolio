@@ -1,31 +1,88 @@
-import React from 'react';
-import project1 from './assets/project1.jpg'
-
-const styles ={
-  content: {
-  borderRadius:100,
-  width:20,
+import React from "react";
+import project1 from "./assets/project1.jpg";
+const styles = {
+  img: {
+    display: "flex",
+    justifyContent: "space-inbetween",
+    maxWidth: 100,
   },
-  image:{
-    height:200,
-    width:200,
-  }
 };
+
 export default function Portfolio() {
   return (
-    <div className='container'>
-    <div >
-      <div className="card" styles={styles.content} >
-  
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <img src={project1}  alt="project1" styles={styles.image} ></img>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="https://www.linkedin.com/feed/" className="btn btn-primary">Go somewhere</a>
-  </div>
-  
-</div>
-    </div>
+    <div className="container">
+      {/* <div className="card" styles={styles.img}>
+        <img
+          src={project1}
+          href="https://www.linkedin.com/feed/"
+          className="card-img-top"
+          alt="project1"
+        ></img>
+        <div className="card-body">
+          <p className="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div> */}
+      <div className="row">
+        <div className="col-sm-6 mb-3 mb-sm-0">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Special title treatment</h5>
+              <p className="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Special title treatment</h5>
+              <p className="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Special title treatment</h5>
+              <p className="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Special title treatment</h5>
+              <p className="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

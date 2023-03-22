@@ -40,8 +40,9 @@ Footer{
 .headerName{
   display: flex;
   flex-direction: row;
-  
-  
+}
+.card-body{
+  max-width: 200px;
 }
 
 @keyframes App-logo-spin {
