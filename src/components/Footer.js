@@ -1,20 +1,3 @@
-// import React from 'react';
-
-// export default function Footer() {
-//     return (
-  
-// <footer className="p-3 mb-2 bg-dark text-white footer">
- 
-//   <div className="text-center p-3" classStyle="background-color: rgba(0, 0, 0, 0.2);">
-//     © 2023 Copyright
-    
-//   </div>
- 
-// </footer>
-
-
-//       );
-//   }
 import React from 'react';
 import {
   MDBFooter,
@@ -34,7 +17,7 @@ export default function Footer() {
             floating
             size="lg"
             className='text-dark m-1'
-            href='#!'
+            href='https://www.facebook.com/people/Krister-Myrl%C3%B8nn/642371420/'
             role='button'
           >
             <MDBIcon fab className='fab fa-facebook-f' />
@@ -70,7 +53,7 @@ export default function Footer() {
             floating
             size="lg"
             className='text-dark m-1'
-            href='#!'
+            href='https://www.instagram.com/kristermyr/'
             role='button'
           >
             <MDBIcon fab className='fa-instagram' />
@@ -82,7 +65,7 @@ export default function Footer() {
             floating
             size="lg"
             className='text-dark m-1'
-            href='#!'
+            href='https://www.linkedin.com/in/krister-myrlonn-66562349/'
             role='button'
           >
             <MDBIcon fab className='fa-linkedin' />
@@ -94,7 +77,7 @@ export default function Footer() {
             floating
             size="lg"
             className='text-dark m-1'
-            href='#!'
+            href='https://github.com/kristermyr'
             role='button'
           >
             <MDBIcon fab className='fa-github' />

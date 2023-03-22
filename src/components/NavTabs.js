@@ -2,9 +2,13 @@ import React from 'react';
 
 
 
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+    <div className='col'>
+      <h1 className="headerName">Krister Myrlonn</h1>
     <ul className="nav nav-tabs">
+    
       <li className="nav-item">
         <a
           href="#resume"
@@ -50,6 +54,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </div>
   );
 }
 

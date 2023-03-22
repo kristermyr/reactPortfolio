@@ -35,9 +35,14 @@ Footer{
 }
 .nav{
   display: flex;
-  justify-content: right;
+  justify-content: flex-end
 }
-
+.headerName{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
 
 @keyframes App-logo-spin {
   from {
