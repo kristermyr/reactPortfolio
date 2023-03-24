@@ -1,5 +1,8 @@
 import React from "react";
-import marvel from "../src/assets/marvelDirectory.PNG";
+import marvel from "./assets/marvelDirectory.PNG";
+import didINeedThat from "./assets/didYouNeedThat.jpg"
+import eCommerce from "./assets/eCommerce.png"
+import project1 from "./assets/background.jpg"
 const style = {
   img: {
     display: "flex",
@@ -25,7 +28,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div class="card" style={style.img}>
-          <img src={marvel} class="card-img-top" alt="project pic"></img>
+          <img src={didINeedThat} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -36,7 +39,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div class="card" style={style.img}>
-          <img src={project1} class="card-img-top" alt="project pic"></img>
+          <img src={eCommerce} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
               Some quick example text to build on the card title and make up the

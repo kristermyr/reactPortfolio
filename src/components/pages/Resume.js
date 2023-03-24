@@ -1,6 +1,6 @@
 import React from 'react';
-import resume1 from '../assets/resume.jpg'
-import resume2 from '../assets/resume.pdf'
+import resume1 from './assets/resume.jpg'
+import resume2 from './assets/KristerMyrlonnResume.pdf'
 const style = {
   img: {
     display: "flex",
