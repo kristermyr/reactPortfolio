@@ -7,7 +7,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className='col'>
       <h1 className="headerName">Krister Myrlonn</h1>
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs  ">
     
       <li className="nav-item">
         <a
@@ -20,7 +20,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Resume
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item  " >
         <a
           href="#about"
           onClick={() => handlePageChange('About')}

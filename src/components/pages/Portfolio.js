@@ -1,87 +1,87 @@
 import React from "react";
-import project1 from "./assets/project1.jpg";
-const styles = {
+import marvel from "../src/assets/marvelDirectory.PNG";
+const style = {
   img: {
     display: "flex",
     justifyContent: "space-inbetween",
-    maxWidth: 100,
+    width: "18rem",
   },
 };
 
 export default function Portfolio() {
   return (
     <div className="container">
-      {/* <div className="card" styles={styles.img}>
-        <img
-          src={project1}
-          href="https://www.linkedin.com/feed/"
-          className="card-img-top"
-          alt="project1"
-        ></img>
-        <div className="card-body">
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div> */}
       <div className="row">
-        <div className="col-sm-6 mb-3 mb-sm-0">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
+        <div class="card" style={style.img}>
+          <img src={marvel} class="card-img-top" alt="project pic"></img>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+            
           </div>
         </div>
-        <div className="col-sm-6">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
+        <div class="card" style={style.img}>
+          <img src={marvel} class="card-img-top" alt="project pic"></img>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
           </div>
         </div>
-        <div className="col-sm-6">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
+        <div class="card" style={style.img}>
+          <img src={project1} class="card-img-top" alt="project pic"></img>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
           </div>
         </div>
-        <div className="col-sm-6">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="https://www.linkedin.com/feed/" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
+        <div class="card" style={style.img}>
+          <img src={project1} class="card-img-top" alt="project pic"></img>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
           </div>
         </div>
+        <div class="card" style={style.img}>
+          <img src={project1} class="card-img-top" alt="project pic"></img>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+          </div>
+        </div>
+        <div class="card" style={style.img}>
+          <img src={project1} class="card-img-top" alt="project pic"></img>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+            
+          </div>
+        </div>
+       
+        
       </div>
     </div>
   );
