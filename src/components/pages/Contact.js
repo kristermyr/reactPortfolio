@@ -1,3 +1,18 @@
+
+// import React from 'react';
+// export default function Contact() {
+//   return (
+//     <div className="containerForm">
+//       <form>
+//         <h3>Get in touch!</h3>
+//         <input type="text" id="name" placeholder="Your Name" required></input>
+//         <input type="text" id="email" placeholder="Your Email" required></input>
+//         <textarea type="text" id="message" rows="4" placeholder="Write your message" required></textarea>
+//         <button type="submit">Send message</button>
+//       </form>
+//     </div>
+//   );
+// }
 import React, { useState } from "react";
 // export default function Contact() {
 //   return (
@@ -7,7 +22,7 @@ import React, { useState } from "react";
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from "../../utils/helpers";
 
-export function Contact() {
+function Contact() {
   // Create state variables for the fields in the Contact
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState("");
@@ -49,7 +64,6 @@ export function Contact() {
 
   return (
     <div className="containerContact">
-      <Contact>
         <h3>Get in touch!</h3>
         <input
           type="text"
@@ -79,7 +93,7 @@ export function Contact() {
         <button type="submit" onClick={handleContactSubmit}>
           Send message
         </button>
-      </Contact>
+    
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
