@@ -11,3 +11,11 @@ export function validateEmail(email) {
     return false;
   }
   
+
+  export function validateName(input) {
+    const name = /^[A-Za-z]$/;
+    if (input.match(name)) {
+      return true;
+    }
+    return false;
+  }

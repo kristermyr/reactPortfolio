@@ -1,107 +1,93 @@
-
-// import React from 'react';
-// export default function Contact() {
-//   return (
-//     <div className="containerForm">
-//       <form>
-//         <h3>Get in touch!</h3>
-//         <input type="text" id="name" placeholder="Your Name" required></input>
-//         <input type="text" id="email" placeholder="Your Email" required></input>
-//         <textarea type="text" id="message" rows="4" placeholder="Write your message" required></textarea>
-//         <button type="submit">Send message</button>
-//       </form>
-//     </div>
-//   );
-// }
 import React, { useState } from "react";
-// export default function Contact() {
-//   return (
+import { Container } from "react-bootstrap";
 
-//   );
-// }
-// Here we import a helper function that will check if the email is valid
 import { validateEmail } from "../../utils/helpers";
+// Here we import a helper function that will check if the email is valid
+const style = {
+  msg: {
+    color: "red"
+  },
+};
 
 function Contact() {
-  // Create state variables for the fields in the Contact
-  // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState("");
-  const [userName, setUserName] = useState("");
+  const [formState, setFormState] = useState({
+    name: "", email: "", message: "",
+  });
+
   const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, message } = formState;
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "userName") {
-      setUserName(inputValue);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!errorMessage) {
+      console.log("Submit Form", formState);
     }
   };
 
-  const handleContactSubmit = (e) => {
-    // Preventing the default behavior of the Contact submit (which is to refresh the page)
-    e.preventDefault();
-
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage("Email or username is invalid");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+  const handleChange = (e) => {
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
     }
-    alert(`Hello ${userName}`);
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setUserName("");
-
-    setEmail("");
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log("Handle Form", formState);
+    }
   };
 
   return (
-    <div className="containerContact">
+    <Container>
+      <div className="container">
+        
+        <form onSubmit={handleSubmit}>
         <h3>Get in touch!</h3>
-        <input
-          type="text"
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          id="name"
-          placeholder="Your Name"
-          required
-        ></input>
-        <input
-          type="text"
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          id="email"
-          placeholder="Your Email"
-          required
-        ></input>
-        <textarea
-          type="text"
-          id="message"
-          rows="4"
-          placeholder="Write your message"
-          required
-        ></textarea>
-        <button type="submit" onClick={handleContactSubmit}>
-          Send message
-        </button>
-    
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    </div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+            defaultValue={name}
+            onBlur={handleChange}
+          ></input>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            onBlur={handleChange}
+          ></input>{" "}
+          <br />
+          <textarea
+            type="text"
+            name="message"
+            rows="4"
+            placeholder="Write your message"
+            required
+            defaultValue={message}
+            onBlur={handleChange}
+          ></textarea>
+           
+        </form>
+        <button type="submit" className="btn btn-primary">Send message</button>
+        {errorMessage && (
+          <div>
+            <p className="error-text"style={style.msg}>{errorMessage}</p>
+          </div>
+        )}
+       
+      </div>
+    </Container>
   );
 }
 
 export default Contact;
-

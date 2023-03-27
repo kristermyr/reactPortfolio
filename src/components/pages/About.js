@@ -1,8 +1,11 @@
 import React from 'react';
+import profile from "./assets/profile.jpg"
 export default function About() {
   return (
-    <div className=''>
-      <h1>About</h1>
+    <div>
+      <h1>About me</h1>
+      <img src={profile} className="profile-pic" alt="profile pic"></img>
+
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
         Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
