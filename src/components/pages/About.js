@@ -6,7 +6,7 @@ export default function About() {
       <h1>About me</h1>
       <img src={profile} className="profile-pic" alt="profile pic"></img>
 
-      <p>
+      <p className="contentText">
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
         Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
         dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus

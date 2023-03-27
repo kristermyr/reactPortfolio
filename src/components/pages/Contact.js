@@ -78,7 +78,7 @@ function Contact() {
           ></textarea>
            
         </form>
-        <button type="submit" className="btn btn-primary">Send message</button>
+        <button type="submit" className="btn btn-primary btncontact">Send message</button>
         {errorMessage && (
           <div>
             <p className="error-text"style={style.msg}>{errorMessage}</p>

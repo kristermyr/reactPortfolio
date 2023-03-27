@@ -19,11 +19,10 @@ export default function Portfolio() {
           <img src={marvel} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Marvel character lookup
             </p>
-            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
-            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+            <a href="https://akshatha2022.github.io/MarvelDirectory/" class="btn btn-primary">Deployed site</a>
+            <a href="https://github.com/Akshatha2022/MarvelDirectory" class="btn btn-primary">Github</a>
             
           </div>
         </div>
@@ -31,22 +30,20 @@ export default function Portfolio() {
           <img src={didINeedThat} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Did you really need that?
             </p>
-            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
-            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+            <a href="https://did-i-need-that.herokuapp.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://github.com/llangerud/did-i-need-that" class="btn btn-primary">Github</a>
           </div>
         </div>
         <div class="card" style={style.img}>
           <img src={eCommerce} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            E-Commerce Back End application
             </p>
-            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
-            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+            <a href="https://github.com/kristermyr/E-commerce-Back-End" class="btn btn-primary">Deployed site</a>
+            <a href="https://github.com/kristermyr/E-commerce-Back-End" class="btn btn-primary">Github</a>
           </div>
         </div>
         <div class="card" style={style.img}>
