@@ -1,5 +1,5 @@
 import React from "react";
-import homebros from "./assets/homebros.png"
+import homebros from "./assets/homeBrosMain.png"
 import marvel from "./assets/marvelDirectory.PNG";
 import didINeedThat from "./assets/didYouNeedThat.jpg"
 import eCommerce from "./assets/eCommerce.png"
