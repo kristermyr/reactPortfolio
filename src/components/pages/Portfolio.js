@@ -48,7 +48,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div class="card" style={style.img}>
-          <img src={project1} class="card-img-top" alt="project pic"></img>
+          <img src={homebros} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
               HomeBros
