@@ -1,4 +1,5 @@
 import React from "react";
+import homebros from "./assets/homebros.png"
 import marvel from "./assets/marvelDirectory.PNG";
 import didINeedThat from "./assets/didYouNeedThat.jpg"
 import eCommerce from "./assets/eCommerce.png"
@@ -50,11 +51,10 @@ export default function Portfolio() {
           <img src={project1} class="card-img-top" alt="project pic"></img>
           <div class="card-body">
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              HomeBros
             </p>
-            <a href="https://www.google.com/" class="btn btn-primary">Deployed site</a>
-            <a href="https://www.google.com/" class="btn btn-primary">Github</a>
+            <a href="https://arcane-savannah-38796.herokuapp.com/" class="btn btn-primary">Deployed site</a>
+            <a href="https://github.com/kristermyr/home-bros" class="btn btn-primary">Github</a>
           </div>
         </div>
         <div class="card" style={style.img}>
